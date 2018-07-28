@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    
+    <Button
+        android:text="Father"
+        android:id="@+id/father"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mother"
+        android:layout_toEndOf="@+id/mother" />
+
+    <Button
+        android:text="Mother"
+        android:id="@+id/mother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dont"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Fight"
+        android:id="@+id/fight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/like"
+        android:layout_toEndOf="@+id/like" />
+
+    <Button
+        android:text="Like"
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dont"
+        android:layout_toEndOf="@+id/dont" />
+
+    <Button
+        android:text="Don't"
+        android:id="@+id/dont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hungry"
+        android:layout_toEndOf="@+id/hungry" />
+
+    <Button
+        android:text="Hungry"
+        android:id="@+id/hungry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/father" />
+
+    <Button
+        android:text="Home"
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/I"
+        android:layout_toEndOf="@+id/I" />
+
+    <Button
+        android:text="Happy"
+        android:id="@+id/hapy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_toEndOf="@+id/home" />
+
+    <Button
+        android:text="I"
+        android:id="@+id/I"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/like"
+        android:layout_toEndOf="@+id/dont" />
+
+    <Button
+        android:text="Am"
+        android:id="@+id/am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/father"
+        android:layout_toEndOf="@+id/father" />
+
+    <Button
+        android:text="Enter"
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--<com.example.tektak.myapplication.MLRoundedImageView-->
+        <!--android:src="@drawable/images"-->
+        <!--android:id="@+id/cicle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/fight"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginBottom="49dp"-->
+        <!--android:layout_toEndOf="@+id/textView" />-->
+
+    <TextView
+        android:text="Hello, Aarush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_toEndOf="@+id/like" />
+
+    <!--<com.pkmmte.view.CircularImageView-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="250dp"-->
+        <!--android:src="@drawable/download"-->
+        <!--android:layout_above="@+id/fight"-->
+        <!--android:layout_toEndOf="@+id/fight"-->
+        <!--android:layout_marginStart="38dp"-->
+        <!--android:id="@+id/view" />-->
+
+    <TextView
+        android:id="@+id/sentenceField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>

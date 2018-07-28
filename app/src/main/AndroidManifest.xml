@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tektak.myapplication" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <permission android:name="com.example.tektak.myapplication.MusicActivity" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <permission android:name="com.example.tektak.myapplication.ParentMediaSelectorActivity" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".RegistrationLogin"
+            android:label="@string/title_activity_registration_login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".NavigationDrawer"
+            android:label="@string/title_activity_navigation_drawer" >
+        </activity>
+        <activity
+            android:name=".MusicPlayer"
+            android:label="@string/title_activity_music_player" >
+        </activity>
+        <!-- <activity -->
+        <!-- android:name=".RegistrationLogin" -->
+        <!-- android:label="@string/title_activity_registration_login" > -->
+        <!-- </activity> -->
+        <activity
+            android:name=".Registration"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name=".SecondLogin"
+            android:label="@string/title_activity_second_login" >
+        </activity>
+        <activity
+            android:name=".ParentDashboard"
+            android:label="@string/title_activity_parent_dashboard" >
+        </activity>
+        <activity
+            android:name=".ChildDashboard"
+            android:label="@string/title_activity_child_dashboard" >
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ParentMediaSelectorActivity2"
+            android:label="@string/title_activity_parent_media_selector2" >
+        </activity>
+        <activity android:name=".AndroidBuildingMusicPlayerActivity"
+            android:label="AndroidBuildingMusicPlayerActivity">
+        </activity>
+        <activity android:name=".MusicActivity"></activity>
+        <activity android:name=".StoryDashboard"></activity>
+        <activity android:name=".story1"></activity>
+        <activity android:name=".story2"></activity>
+        <activity android:name=".story3"></activity>
+        <activity android:name=".DrawingActivity_2"></activity>
+        <activity android:name=".colorPage"></activity>
+        <activity android:name=".SelectBook"></activity>
+        <activity android:name=".ColorSelector"></activity>
+    </application>
+
+</manifest>
